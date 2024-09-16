@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Formulario de cadastro </title>
+</head> 
+<body>
+<div class="content">
+ <form action="" method="post"class="estilo1">
+     <h1> Formulario de contato </h1>
+       <span class="titulo2"> Se indentifique </span>
+      <br>
+      <br> 
+     <div class="rotulos"> Nome completo :
+        <br>
+      <input id="nome"type="text" name="name" placeholder="preencha com o nome completo" class="nome2" size="40"/>
+     <div class="rotulos"> email:
+        <br>
+      <input id="gmail"type="email" name="email" placeholder="preencha com seu Email"class="email2" size="40"/>
+     <div class="Senha">Sua senha de login:
+        <br>
+      <input id="password"type="password" maxlength="8" placeholder="coloque sua senha"class="pass"size="40" autofocus/>
+     <div class="rotulos"> Qual seu nivel de ensino:
+        <br>
+      <select name="options" class="box">
+         <option value=""></opition>
+         <option value="Ensino fundamental"> Ensino fundamental</option>
+         <option value="Ensino medio completo"> Ensino medio completo</opition>
+         <option value="Ensino Superior completo"> Ensino Superior completo</opition>
+         </select>
+         <br>
+         <div class="rotulos">Faça um breve resumo do seu perfil:
+         <br>
+<textarea id="mensager"nome="mensager"placeholder="Escreva aqui o motivo" class="boxmensager"></textarea>
+<div class="rotulos">&nbsp;
+<input type="button" value="Enviar" class="buttonCL" onclick="alert('resposta foi enviada')"/>
+</div>
+</form>
+</body>
+</html>
