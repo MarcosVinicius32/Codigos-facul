@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de comando for </title>
+</head>
+<body>
+    <h3>tabela de for</h3>
+    <style>
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .tabela{
+            box-shadow: 12px 12px lightblue;
+            background-color: aqua;
+            border-style: solid;
+            border-width: 3px;
+            border-color: brown;
+        }
+        .celula{
+            background-color: aqua;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(rgb(143, 38, 38), green, blue);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .cabecalho{
+            font-weight: 700;
+            background-color: rgb(177, 149, 143);
+        }
+    </style>
+    <h3>
+        <table class="tabela">
+        <tr><td class ='celula cabeçario'>v1</td>
+        <td class ='celula cabecalho'>v2</td></tr>
+    </h3>
+    <script>
+
+let v;
+for (v=1; v<=20; v++){
+document.write("<tr>");
+    document.write("<td class = 'celula'>" + v + "</td>" + "<td class='celula'>"+ (v*v) +"</td>");
+    document.write("</tr>");
+}
+
+    </script>
+     </table>
+</body>
+</html>
