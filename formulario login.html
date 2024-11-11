@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function mostrarDados(){
+let msg = "";
+msg += "Login" + document.getElementById("login").value + " | ";
+msg += "Senha" + document.getElementById("Senha").value;
+alert(msg);
+document.write(msg);
+}
+window.onload = function(){
+document.getElementById("btn").onclick = function(){
+    mostrarDados();
+}
+
+}
+    </script>
+</head>
+<body>
+    <h2>Exemplo 15 - formulario</h2>
+  <form name="form1"id="form1" method="post"action="">
+  login: 
+  <input name="login" type="text" id="login" size="15">
+  <br>
+  Senha:
+  <input name="Senha" type="password" id="Senha" size="15">
+  <br>
+  <input type="button" name="button" id="btn" value="ok">
+    </form>
+</body>
+</html>
