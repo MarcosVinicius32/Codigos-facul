@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula javascript</title>
+</head>
+<body>
+    <script>
+window.onload = function(){
+const input = document.getElementById = ('input')
+const resultado = document.getElementById = ('resultado')
+
+input.addEventListener('keydown',(e) => {
+    resultado.innerHTML = `tecla pressionada: ${e.key}`;
+    console.log(`tecla pressionada:` , e.key);
+});
+
+input.addEventListener('keyup',(e) => {
+    resultado.innerHTML = `tecla solta: ${e.key}`
+    console.log(`tecla solta: ` , e.key);
+});
+
+
+}
+
+    </script>
+    <h2> exemplo de keydown e keyup</h2>
+    <input id="input" type="text" placeholder="digite algo"> 
+    <div id="resultado"></div>
+</body>
+</html>
